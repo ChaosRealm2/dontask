@@ -1,0 +1,123 @@
+<head>
+ <!-- Custom Fonts -->
+ <title>Britannica For Teens</title>
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+ <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet"> 
+ <style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 28px;
+  }
+
+  .wideimg {
+   opacity: 0.7;
+   transition: 0.8s;
+ }
+
+ .wideimg:hover {
+   opacity: 1;
+   width: 80%
+ }
+
+ .row3 {
+   display: inline-grid;
+   grid-template-columns: repeat(2, 1fr);
+ }
+
+ img {
+  border-radius: 24px;
+ }
+ .red {
+  filter:hue-rotate(190deg);
+  opacity: 50%;
+  transition:0.5s
+ }
+
+ .red:hover {
+  opacity: 100%;
+ }
+
+ .blue {
+  filter:hue-rotate(95deg);
+  opacity: 50%;
+  transition:0.5s
+ }
+
+ .blue:hover {
+  opacity: 100%;
+ }
+
+ .nofilter {
+  opacity: 50%;
+  transition:0.5s
+ }
+
+ .nofilter:hover {
+  opacity: 100%;
+ }
+ </style>
+ <script src="uv/uv.bundle.js" defer></script>
+ <script src="uv/uv.config.js" defer></script>
+ <script src="register-sw.js" defer></script>
+ <script src="search.js" defer></script>
+ <script src="index.js" defer></script>
+ <link rel="stylesheet" href="index.css" />
+ <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Encyclop%C3%A6dia_Britannica.svg/1200px-Encyclop%C3%A6dia_Britannica.svg.png">
+</head>
+
+<div style="box-shadow: 0 8px 6px -6px black;height: 8%;background-color:#071c2e;text-align: left;align-items: center;display:flex"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Encyclop%C3%A6dia_Britannica.svg/1200px-Encyclop%C3%A6dia_Britannica.svg.png" height="50%">⠀Britannica For Teens</div>
+
+<div style="align-items: center;display:flex;justify-content: center;height:26%;background-image:linear-gradient(to bottom, #071c2e, #182b3b)">
+  <form id="uv-form" class="flex-center">
+    <input
+      id="uv-search-engine"
+      value="https://www.google.com/search?q=%s"
+      type="hidden"
+    />
+  <input id="uv-address" style="text-align: center;border-radius: 16px;font-size:32px;line-height: 60%;width: 110%;" placeholder="Enter Search Parameter">
+  </form>
+</div>
+<div>
+  <p style="text-align: center;font-size: 0px;" id="uv-error"></p>
+  <pre style="text-align: center;font-size: 0px;" id="uv-error-code"></pre>
+</div>
+
+<div style="height:66%; color:black">
+  <p style="text-align:center;">Explore our subjects!</p>
+  <div class="row3">
+    <div style="text-align:center;">
+      <img class="nofilter" width="75%" src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_620/MTU3ODc3NjU3MDExMzAwMDYz/francisco-pizarro.jpg">
+      <p>World history</p>
+    </div>
+
+    <div style="text-align:center;">
+      <img class="blue" width="75%" src="https://cdn.britannica.com/72/220272-138-7355553C/pop-culture-Abraham-Lincoln.jpg?w=800&h=450&c=crop">
+      <p>US history</p>
+    </div>
+
+    <div style="text-align:center;">
+      <img class="nofilter" width="75%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlE2rOFk7wrZ14XFbhhzt5M9XxVLiTYnd9mApZ6wZmqlhjtnxcJFPc-YRiRe4A6Qwf3QI&usqp=CAU">
+      <p>Biology</p>
+    </div>
+
+    <div style="text-align:center;">
+      <img class="red" width="75%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNf7MPFIyF_olCmIaAKWtRx2SXpwd61lVxahLqERKiXro6tywefoKB7ZPjRwEuKbqUDR4&usqp=CAU">
+      <p>Chemistry</p>
+    </div>
+
+    <div style="text-align:center;">
+      <img class="red" width="75%" src="https://www.trnicely.net/wp-content/uploads/2020/11/Algebra-and-number-theory-1.jpg">
+      <p>Algebra</p>
+    </div>
+
+    <div style="text-align:center;">
+      <img class="blue" width="75%" src="https://www.piqosity.com/wp-content/uploads/2022/12/Depositphotos_400945552_L-e1658434781329-1024x599.jpg">
+      <p>Geometry</p>
+    </div>
+  </div>
+</div>
